@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hanuman', serif;
+  background: linear-gradient(#7fb0e6, #cfe2f3);
+  color: white;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.logo-pill img {
+  max-height: 100px;   
+  max-width: 200px;  
+  width: auto;
+  height: auto;
+}
+
+.hero {
+  padding: 60px;
+}
+
+.hero-box {
+  background: #5f66b3;
+  border-radius: 40px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-box img {
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 60px;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform .3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 60px;
+}
+
+.card {
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.contact-card {
+  background: #e6c7da;
+  color: #5f66b3;
+}
+
+.services-card {
+  background: #7b7fe6;
+}
+
+.services-card ul {
+  padding-left: 20px;
+}
+
+.qr-card {
+  background: #8fb7f0;
+  text-align: center;
+}
+
+.qr-card img {
+  max-width: 100%;
+}
+
+.photo-card img {
+  max-width: 150%;
+}
+
+@media (max-width: 992px) {
+  .hero-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+}
